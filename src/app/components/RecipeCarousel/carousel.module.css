@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+.carousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    margin: 0 auto;
+}
+
+.slides_container {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: 40px;
+}
+
+.slide_container {
+    height: 600px;
+    width: 400px;
+    background-color: #3F4365;
+    margin-inline: 20px;
+    transition: transform 0.5s;
+    border-radius: 16px;
+}
+
+.active_slide {
+    transform: scale(1.1);
+}
+
+.nav_button {
+    height: 90px;
+    width: 180px;
+    border-radius: 16px;
+    background-color: #3F4365;
+    border-style: none;
+    color: #636B97;
+    font-size: 30px;
+    cursor: pointer;
+    transition: 0.5s;
+    margin: 20px;
+}
+
+.nav_button:hover {
+    background-color: #636B97;
+    color: #fff;
+}
+
+.nav_button:active {
+    background-color: #EEAA74;
+    color: #fff;
+}
+
+.nav_buttons_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.recipe_image {
+    border-radius: 16px;
+}
+
+.recipe_text_container {
+    margin-inline: 20px;
+}
+
+.recipe_name {
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-size: 20px;
+    border-color: #EEAA74;
+    border-style: solid;
+    border-width: 3px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.additional_informations_container {
+    overflow-y: auto;
+    margin-top: 20px;
+    height: 250px;
+}
+
+.additional_informations_container::-webkit-scrollbar {
+    border-radius: 8px;
+    width: 16px;
+}
+
+.additional_informations_container::-webkit-scrollbar-thumb {
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+.additional_informations_container::-webkit-scrollbar-track {
+    background-color: #636B97;
+    border-radius: 4px;
+}
+
+.additional_informations {
+    margin-top: 0;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+.additional_key {
+    color: #fff;
+}
+
+.additional_value {
+    color: #EEAA74;
+}
+
+.health_score_negative {
+    color: #fe8480;
+}
+
+.health_score_neutral {
+    color: #fedb80;
+}
+
+.health_score_positive {
+    color: #81fe83;
+}
+
+.select_recipe {
+    height: 30px;
+    width: 180px;
+    border-radius: 8px;
+    background-color: #636B97;
+    border-style: none;
+    color: #fff;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-bottom: 20px;
+}

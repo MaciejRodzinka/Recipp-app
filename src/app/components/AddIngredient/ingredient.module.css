@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+.ingredient_add_container {
+    width: 1224px;
+    height: 90px;
+    background-color: #3F4365;
+    border-radius: 16px;
+}
+
+.ingredient_add_input {
+    display: flex;
+    flex-direction: row;
+}
+
+.ingredient_add {
+    border-radius: 16px;
+    width: 1134px;
+    height: 90px;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    background-color: #3F4365;
+    border-style: none;
+    text-indent: 15px;
+}
+
+.ingredient_add::placeholder {
+    color: #636B97;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.ingredient_add:focus {
+    outline: none;
+}
+
+.ingredient_add[type="text" i] {
+    writing-mode: horizontal-tb;
+    padding-block: 0px;
+    padding-inline: 0px;
+}
+
+.add_ingredient_button {
+    width: 90px;
+    height: 90px;
+    background-color: #EEAA74;
+    border-radius: 16px;
+    cursor: pointer;
+    border-style: none;
+    color: #fff;
+    font-size: 40px;
+}
+
+.add_ingredient_button_inactive {
+    width: 90px;
+    height: 90px;
+    background-color: #3F4365;
+    border-radius: 16px;
+    cursor: pointer;
+    border-style: none;
+    color: #fff;
+    font-size: 40px;
+}
+
+.icon {
+    transition: transform 0.5s;
+}
+
+.icon_active {
+    transform: rotateZ(360deg);
+}
+
+.icon_inactive {
+    transform: rotateZ(-360deg);
+}

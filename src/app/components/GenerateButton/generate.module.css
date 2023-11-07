@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+.button {
+    height: 90px;
+    width: 240px;
+    border-radius: 16px;
+    border-style: none;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    transition: 0.5s;
+    margin: 40px;
+    align-self: flex-end;
+    justify-self: flex-end;
+}
+
+.button_inactive {
+    background-color: #3F4365;
+    color: #636B97;
+}
+
+.button_active {
+    background-color: #EEAA74;
+    color: #fff;
+}
+
+
+.button_inactive:hover {
+    background-color: #636B97;
+    color: #fff;
+}
+
+@keyframes shake {
+    25% {
+        transform: rotateZ(15deg);
+    }
+
+    50% {
+        transform: rotateZ(-15deg);
+    }
+
+    75% {
+        transform: rotateZ(15deg);
+    }
+
+    100% {
+        transform: rotateZ(0deg);
+    }
+}
+
+.icon_clicked {
+    animation: shake 0.5s;
+    animation-iteration-count: 1;
+}

@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+.added_ingredient_container_color_1 {
+    background-color: #3F4365;
+    color: #636B97;
+}
+
+.added_ingredient_container_color_2 {
+    background-color: #EEAA74;
+    color: #ffffff;
+}
+
+.added_ingredient_container {
+    border-radius: 8px;
+    width: 220px;
+    height: 34px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: 0.5s;
+}
+
+.added_ingredient_container:hover {
+    background-color: #636B97;
+    color: #ffffff;
+}
+
+.ingredient_text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    cursor: default;
+}
+
+.ingredient_text_name {
+    width: 80px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.pencil_icon {
+    width: 19px;
+}
+
+.trash_icon {
+    width: 16px;
+}
+
+.icon {
+    height: 20px;
+    cursor: pointer;
+    transition: fill 0.5s, transform 0.5s;
+}
+
+@keyframes shake {
+    25% {
+        transform: rotateZ(5deg);
+    }
+
+    50% {
+        transform: rotateZ(-5deg);
+    }
+
+    75% {
+        transform: rotateZ(5deg);
+    }
+
+    100% {
+        transform: rotateZ(0deg);
+    }
+}
+
+.icon:hover {
+    animation: shake 0.5s infinite;
+}
+
+.pencil_icon:hover {
+    color: #fedb80;
+}
+
+.trash_icon:hover {
+    color: #fe8480;
+}

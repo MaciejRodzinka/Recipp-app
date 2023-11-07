@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+.popup_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 70vh;
+    width: 100vh;
+    background-color: #212640;
+    border-radius: 16px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.abort_popup {
+    position: fixed;
+    top: -5%;
+    left: 95%;
+    height: 90px;
+    width: 90px;
+    border-style: none;
+    border-radius: 45px;
+    margin-right: 20px;
+    font-size: 40px;
+    cursor: pointer;
+    background-color: #fe8480;
+    color: #fff;
+}
+
+.ingredient_amount_text {
+    font-size: 36px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.ingredient_name {
+    color: #EEAA74;
+}
+
+.ingredient_unit_specify_container {
+    width: 660px;
+    height: 90px;
+    background-color: #3F4365;
+    border-radius: 16px;
+    margin-bottom: 31px;
+}
+
+.ingredient_unit_specify_input {
+    display: flex;
+    flex-direction: row;
+}
+
+.ingredient_specify {
+    border-radius: 16px;
+    width: 560px;
+    height: 90px;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    background-color: #3F4365;
+    border-style: none;
+    text-indent: 15px;
+}
+
+.ingredient_specify::placeholder {
+    color: #636B97;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.ingredient_specify:focus {
+    outline: none;
+}
+
+.ingredient_specify[type="number" i] {
+    writing-mode: horizontal-tb;
+    padding-block: 0px;
+    padding-inline: 0px;
+}
+
+.ingredient_specify::-webkit-inner-spin-button,
+.ingredient_specify::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.ingredient_specify::-webkit-inner-spin-button,
+.ingredient_specify::-webkit-outer-spin-button {
+    -moz-appearance: none;
+    margin: 0;
+}
+
+.ingredient_button {
+    height: 90px;
+    width: 90px;
+    border-style: none;
+    border-radius: 16px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.specify_ingredient_unit_button {
+    background-color: #EEAA74;
+    color: #fff;
+    font-size: 40px;
+    margin-right: 0px;
+}
+
+.ingredient_units {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.ingredient_unit {
+    display: flex;
+    flex-direction: row;
+    margin-block: 20px;
+}
+
+.ingredient_unit_selector_unactive {
+    background-color: #3F4365;
+}
+
+.ingredient_unit_selector_unactive:hover {
+    background-color: #636B97;
+}
+
+.ingredient_unit_selector_unactive:hover~.ingredient_unit_text {
+    color: #636b97;
+}
+
+.ingredient_unit_selector_active {
+    background-color: #EEAA74;
+}
+
+.ingredient_unit_text {
+    color: #3F4365;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.ingredient_unit_active_text {
+    color: #fff;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
